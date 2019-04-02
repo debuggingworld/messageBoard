@@ -1,7 +1,5 @@
 package com.zth.servlet.core;
 
-import com.zth.pojo.Admin;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
