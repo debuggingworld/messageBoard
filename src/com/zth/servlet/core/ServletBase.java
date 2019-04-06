@@ -33,7 +33,6 @@ public abstract class ServletBase extends HttpServlet {
         try {
             Method method = clazz.getDeclaredMethod(action, Mapping.class);
             if (null != method) {
-
                 Mapping mapping = new Mapping(req,resp);
                 method.invoke(this,mapping);
                 mapping =null;
@@ -41,8 +40,6 @@ public abstract class ServletBase extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 
     /**
@@ -58,7 +55,6 @@ public abstract class ServletBase extends HttpServlet {
      * 内部类
      */
     public class Mapping{
-
 
         private HttpServletRequest request;
         private HttpServletResponse response;

@@ -23,7 +23,6 @@ public class TestDB {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
     @Test

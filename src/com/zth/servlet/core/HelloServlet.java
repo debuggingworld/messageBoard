@@ -18,7 +18,7 @@ public class HelloServlet extends ServletBase {
 
     public void delete(Mapping mapping) throws ServletException, IOException {
         mapping.rander("delete 方法");
-}
+    }
 
     public void update(Mapping mapping) throws ServletException, IOException {
         mapping.rander("update 方法");

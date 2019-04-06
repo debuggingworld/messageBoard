@@ -2,7 +2,6 @@ package com.zth.db;
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.ResultSetHandler;
-import sun.plugin2.main.server.ResultHandler;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -182,14 +181,6 @@ public class Db {
         releaseConnection(connection);
         return result;
     }
-
-
-
-
-
-
-
-
 
 
 }
