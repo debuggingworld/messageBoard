@@ -1,4 +1,6 @@
-package com.zth.servlet.core;
+package com.zth.servlet;
+
+import com.zth.servlet.core.ServletBase;
 
 import javax.servlet.annotation.WebServlet;
 
