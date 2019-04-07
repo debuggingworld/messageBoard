@@ -7,28 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2224520-1846-4770-92d9-1428d6b23df5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/booter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/booter2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/sweetalert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/regist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/test/TestDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/test/TestDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/RandomImgAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/RandomImgAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/core/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/core/RegistServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/core/RegistServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/core/ServletBase$Mapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/core/ServletBase$Mapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/pages/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zth/servlet/RandomImgAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/servlet/RandomImgAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zth/servlet/core/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/servlet/core/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/test/TestDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/test/TestDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/test/TestDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/test/TestDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/RandomImgAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/RandomImgAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/core/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/core/RegistServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/core/RegistServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/core/ServletBase$Mapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/core/ServletBase$Mapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/main.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +21,7 @@
     <session id="1217433638">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -59,7 +39,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="41" />
-          <entry key="JSP" value="13" />
+          <entry key="JSP" value="14" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="Properties" value="2" />
@@ -69,7 +49,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="7152" />
-          <entry key="JSP" value="468" />
+          <entry key="JSP" value="495" />
           <entry key="Markdown" value="64" />
           <entry key="PLAIN_TEXT" value="11" />
         </counts>
@@ -99,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/booter2.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -108,10 +88,22 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/regist.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1750">
+              <caret line="70" column="50" lean-forward="true" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
+            <state relative-caret-position="1000">
               <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
             </state>
           </provider>
@@ -160,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/com/zth/servlet/RandomImgAction.java" />
         <option value="$PROJECT_DIR$/src/com/zth/servlet/core/RegistServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/booter2.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/regist.jsp" />
       </list>
     </option>
   </component>
@@ -177,8 +170,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -280,7 +272,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554610659522" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554614110300" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/druid-1.1.6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -509,7 +501,7 @@
       <workItem from="1554518063461" duration="3777000" />
       <workItem from="1554563345376" duration="754000" />
       <workItem from="1554599120095" duration="153000" />
-      <workItem from="1554602989037" duration="8229000" />
+      <workItem from="1554602989037" duration="9850000" />
     </task>
     <task id="LOCAL-00001" summary="modify README">
       <created>1553949707104</created>
@@ -569,7 +561,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67457000" />
+    <option name="totallyTimeSpent" value="69078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,8 +574,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21709532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -593,7 +586,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25409836" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25409836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -616,7 +609,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -626,14 +619,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.047540985" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25409836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.12622951" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.540404" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.28360656" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -764,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/core/ServletBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
@@ -813,6 +799,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="70" column="50" lean-forward="true" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
