@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/4/5 0005
-  Time: 19:15
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -28,7 +21,8 @@
                 </div>
                 <div class="panel-body">
                     <!--表单 -->
-                    <form>
+                    <form action="login" method="post">
+                        <input type="hidden" name="action" value="checkLogin"/>
                         <div class="form-group">
                             <label>邮箱：</label>
                             <input type="email" class="form-control" placeholder="Email" name="email" required>
@@ -54,3 +48,4 @@
 </body>
 </html>
 
+<%@include file="booter.jsp" %>

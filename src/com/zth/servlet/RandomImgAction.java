@@ -3,10 +3,13 @@ package com.zth.servlet;
 import com.zth.servlet.core.ServletBase;
 
 import javax.imageio.ImageIO;
+import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Random;
 
 @WebServlet("/randomImage")
@@ -18,8 +21,7 @@ public class RandomImgAction extends ServletBase {
 
 
     @Override
-    public void index(Mapping mapping) throws Exception {
-
+    public void index(Mapping mapping) throws Exception{
         BufferedImage image = new BufferedImage(width,height,BufferedImage.TYPE_INT_BGR);
 
         Graphics2D graph = image.createGraphics();
@@ -72,7 +74,11 @@ public class RandomImgAction extends ServletBase {
 
         // 将四位数字的验证码保存到 Session 中
 
-        mapping.setSesstionAttr("randomCode",randomCode.toString());
+        try {
+            mapping.setSesstionAttr("randomCode",randomCode.toString());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         //进制图像缓存
         mapping.getResponse().setHeader("Pragma","no-cache");

@@ -55,7 +55,6 @@
             </div>
         </div>
 
-
         <!-- 结束 -->
 
     </div>
@@ -63,4 +62,4 @@
 </body>
 </html>
 
-<%--<%@include file="booter2.jsp" %>--%>
+<%@include file="booter2.jsp" %>

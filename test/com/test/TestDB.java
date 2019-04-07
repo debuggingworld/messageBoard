@@ -42,7 +42,7 @@ public class TestDB {
         String sql = "insert into admin(email,upwd,upur) values(?,?,?)";
 
         try {
-            Db.update(sql,"admin@qq.com", Md5Encrypt.md5("admin"),"01000");
+            Db.update(sql,"@qq.com", Md5Encrypt.md5("admin"),"01000");
             System.out.println("插入成功！");
         } catch (SQLException e) {
             e.printStackTrace();

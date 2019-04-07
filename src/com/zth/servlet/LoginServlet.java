@@ -6,23 +6,35 @@ import com.zth.servlet.core.ServletBase;
 import com.zth.utils.Md5Encrypt;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import java.io.IOException;
+import java.sql.SQLException;
 
 
 @WebServlet("/login")
 public class LoginServlet extends ServletBase {
+
     @Override
     public void index(Mapping mapping) throws Exception {
-
+        try {
+            mapping.forward("page/login.jsp");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void checkLogin(Mapping mapping) throws Exception {
+    public void checkLogin(Mapping mapping) throws ServletException, IOException {
         String srand = (String)mapping.getRequest().getSession().getAttribute("randomCode");
 
+        try {
         String rand = mapping.getString("rand");
 
         if (rand.equals(srand)) {
-            String email = mapping.getString("email");
+            String email = null;
+
+                email = mapping.getString("email");
+
             String pwd = mapping.getString("upwd");
 
             String sql = "select * from admin where email = ? and upwd = ?";
@@ -42,6 +54,10 @@ public class LoginServlet extends ServletBase {
             mapping.setAttr("err","验证码不正确！");
             mapping.forward("page/login.jsp");
         }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
 
 }
