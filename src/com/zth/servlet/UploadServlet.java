@@ -26,6 +26,7 @@ public class UploadServlet extends HttpServlet {
 
         if (null!= part){
             String path = this.getServletContext().getRealPath("ups"+"/");
+            System.out.println("path::::"+path);
             String newName =randName()+getExtName(getFileName(part));
 
             part.write(path+newName);

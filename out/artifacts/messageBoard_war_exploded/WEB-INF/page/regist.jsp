@@ -20,6 +20,7 @@
 
                 var upf=document.getElementById("pic").files[0];
                 fd.append("uppic",upf);
+                console.log("upf:::::"+upf);
 
                 $.ajax({
                     type:'POST',
@@ -29,13 +30,13 @@
                     processData:false,
                     success:function(data)
                     {
-                        console.log(data);
+                        //console.log(data);
                         var json=eval("("+data+")");
-                        if(json.error==0)
-                        {
+                        if(json.error == 0){
 
                             $("#hidpic").val(json.newname);
                             var img="<img src=\"ups/"+json.newname+"\" id=\"showpic\" width=\"30\" height=\"30\"/> ";
+                            console.log("img::::"+img)
                             $("#showpic").append(img);
                             //alert("上传成功!");
                         }else
@@ -55,7 +56,7 @@
         <div class="panel panel-primary" style="margin-top: 50px;">
             <div class="panel-heading ">用户注册</div>
             <div class="panel-body">
-                <form action="regist"  method="post">
+                <form action="regist"  method="post" enctype=”multipart/form-data”>
                     <input type="hidden" name="action" value="regist"/>
                     <div class="form-group">
                         <label>Email:</label>
