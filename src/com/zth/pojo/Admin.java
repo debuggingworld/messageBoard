@@ -6,7 +6,25 @@ public class Admin {
     private String email;
     private String upwd;
     private String upur;
+    private String name;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
+    private String pic;
 
     public int getId() {
         return id;

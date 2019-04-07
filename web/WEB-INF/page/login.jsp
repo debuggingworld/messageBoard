@@ -15,7 +15,7 @@
 <div class="container">
     <div class="row">
         <div class=" col-xs-10 col-xs-offset-1 col-sm-offset-2 col-md-6 col-md-offset-3" >
-            <div class="panel panel-default panel panel-primary" >
+            <div class="panel panel-primary" >
                 <div class="panel-heading">
                     <h3 class="panel-title">用户登录</h3>
                 </div>
