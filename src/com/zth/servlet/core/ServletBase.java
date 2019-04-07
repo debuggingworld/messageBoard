@@ -166,7 +166,7 @@ public abstract class ServletBase extends HttpServlet {
             request.setAttribute(key,value);
         }
 
-        public void setSesstionAttr(String key,String value)throws IOException, SQLException{
+        public void setSesstionAttr(String key,Object value)throws IOException, SQLException{
             request.getSession().setAttribute(key,value);
         }
 
