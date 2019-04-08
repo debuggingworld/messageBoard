@@ -7,6 +7,7 @@ public class Admin {
     private String upwd;
     private String upur;
     private String name;
+    private String pic;
 
     public String getName() {
         return name;
@@ -24,7 +25,7 @@ public class Admin {
         this.pic = pic;
     }
 
-    private String pic;
+
 
     public int getId() {
         return id;

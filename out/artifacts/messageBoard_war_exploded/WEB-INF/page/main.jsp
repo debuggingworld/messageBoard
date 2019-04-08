@@ -1,4 +1,4 @@
-
+<%@ page import="com.zth.pojo.Admin" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -14,6 +14,13 @@
             <h3 class="panel-title ">
                 <a href="#" class="btn btn-danger">首页</a>
                 <a href="#" class="btn btn-success">发布留言</a>
+                <div style="float: right">
+                    <%
+                        Admin admin = (Admin)session.getAttribute("loged");
+                        out.println(admin.getEmail());
+                        out.println("<img src='../ups/"+admin.getPic()+"'  height=40");
+                    %>
+                </div>
             </h3>
         </div>
         <!-- 以下是表单 -->
@@ -59,7 +66,7 @@
 
     </div>
 </div>
+<%@include file="booter2.jsp" %>
 </body>
 </html>
 
-<%@include file="booter2.jsp" %>

@@ -45,7 +45,9 @@
         </div>
     </div>
 </div>
+<%--<%@include file="booter.jsp" %>--%>
+<%@include file="booter.jsp" %>
+
 </body>
 </html>
 
-<%@include file="booter.jsp" %>

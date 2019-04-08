@@ -59,5 +59,4 @@ public class LoginServlet extends ServletBase {
         }
     }
 
-
 }

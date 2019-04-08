@@ -3,6 +3,7 @@ package com.zth.servlet;
 import com.zth.db.Db;
 import com.zth.pojo.Admin;
 import com.zth.servlet.core.ServletBase;
+import com.zth.utils.Md5Encrypt;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,18 +29,23 @@ public class RegistServlet extends ServletBase {
         String sql = "insert into admin(email,upwd,upur,name,pic) values(?,?,?,?,?)";
 
         try {
-            Db.update(sql,admin.getEmail(),admin.getUpwd(),admin.getUpur(),admin.getName(),admin.getPic());
+            Db.update(sql,admin.getEmail(), Md5Encrypt.md5(admin.getUpwd()),admin.getUpur(),admin.getName(),admin.getPic());
 
-            mapping.setAttr("msg","注册成功");
+            mapping.setAttr("msg","注册成功！");
 
         } catch (SQLException e) {
             try {
-                mapping.setAttr("msg","注册成功");
+                mapping.setAttr("msg","注册失败！");
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
             e.printStackTrace();
         }
-        mapping.redirect("login");
+        //mapping.redirect("login");
+        try {
+           mapping.forward("/page/login.jsp");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

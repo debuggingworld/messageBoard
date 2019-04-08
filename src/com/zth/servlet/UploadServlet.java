@@ -24,18 +24,13 @@ public class UploadServlet extends HttpServlet {
 
         Part part = req.getPart("uppic");
 
-        System.out.println(part);
         if (null!= part){
-            System.out.println("not null");
             String path = this.getServletContext().getRealPath("ups"+"/");
-            System.out.println("path::::"+path);
+
             String newName =randName()+getExtName(getFileName(part));
 
-            System.out.println("path::::"+newName);
-            out.write("{ newname:'"+newName+"',error:0 }");
             part.write(path+newName);
-            System.out.println("{ newname:'"+newName+"',error:0 }");
-            out.write("{ newname:'"+newName+"',error:0 }");
+            out.print("{newname:'"+newName+"',error:0}");
 
         }else {
             System.out.println("null");

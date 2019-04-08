@@ -19,7 +19,6 @@
 
                 var upf=document.getElementById("pic").files[0];
                 fd.append("uppic",upf);
-                //console.log("upf:::::"+upf);
 
                 $.ajax({
                     type:'POST',
@@ -29,13 +28,13 @@
                     processData:false,
                     success:function(data)
                     {
-                        //console.log(data);
+                        var json =eval("("+data+")");
                         var json=eval("("+data+")");
+
                         if(json.error == 0){
 
                             $("#hidpic").val(json.newname);
                             var img="<img src=\"ups/"+json.newname+"\" id=\"showpic\" width=\"30\" height=\"30\"/> ";
-                            console.log("img::::"+img)
                             $("#showpic").append(img);
                             //alert("上传成功!");
                         }else
@@ -45,7 +44,6 @@
                     }
                 });
             });
-
         });
     </script>
 </head>
@@ -67,17 +65,17 @@
                     </div>
                     <div class="form-group">
                         <label>姓名:</label>
-                        <input type="text" name="name" class="form-control" placeholder="输入用户名">
+                        <input type="text" name="name" class="form-control" required="required"  placeholder="输入用户名">
                     </div>
                     <div class="form-group">
                         <label>头像:</label>
                         <span id="showpic"></span>
-                        <input type="text" name="pic" id="hidpic"/>
-                        <input type="file" id="pic" />
+                        <input type="hidden" name="pic" id="hidpic"/>
+                        <input type="file" id="pic" required />
                         <!--  <input type="button" value="上传" id="uppic"/> -->
                     </div>
-                    <button type="submit" class="btn btn-info">注册</button>
-                    <a href="login"  class="btn btn-success">登录</a>
+                    <button type="submit" class="btn btn-primary" style="margin-right: 30px;">注册</button>
+                    <a href="login"  class="btn btn-danger">登录</a>
                 </form>
             </div>
         </div>

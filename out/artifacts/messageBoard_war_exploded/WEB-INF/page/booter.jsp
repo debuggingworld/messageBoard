@@ -12,7 +12,9 @@
 
 <%--自定义js--%>
 
+<%--
 <script src="js/content.js?v=1.0.0"></script>
+--%>
 
 <script type="text/javascript" src="js/sweetalert.min.js"></script>
 
