@@ -1,7 +1,6 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -20,7 +19,7 @@
 
                 var upf=document.getElementById("pic").files[0];
                 fd.append("uppic",upf);
-                console.log("upf:::::"+upf);
+                //console.log("upf:::::"+upf);
 
                 $.ajax({
                     type:'POST',
@@ -46,7 +45,6 @@
                     }
                 });
             });
-
         });
     </script>
 </head>
@@ -56,7 +54,7 @@
         <div class="panel panel-primary" style="margin-top: 50px;">
             <div class="panel-heading ">用户注册</div>
             <div class="panel-body">
-                <form action="regist"  method="post" enctype=”multipart/form-data”>
+                <form action="regist"  method="post" >
                     <input type="hidden" name="action" value="regist"/>
                     <div class="form-group">
                         <label>Email:</label>
