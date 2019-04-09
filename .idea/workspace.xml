@@ -8,27 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a2224520-1846-4770-92d9-1428d6b23df5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/pojo/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/pojo/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/RegistServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/RegistServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/classes/com/zth/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/booter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/booter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/booter2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/booter2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/regist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/ups/20190408002528095_559.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zth/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/pojo/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zth/servlet/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/servlet/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zth/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/servlet/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/pojo/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/pojo/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/RegistServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/RegistServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/zth/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/booter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/booter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/booter2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/booter2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/regist.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +20,7 @@
     <session id="1217433638">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="2" />
@@ -51,8 +30,10 @@
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -61,7 +42,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="4" />
           <entry key="JAVA" value="59" />
-          <entry key="JSP" value="33" />
+          <entry key="JSP" value="34" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="1" />
           <entry key="Properties" value="2" />
@@ -83,11 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="550">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -95,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="925">
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,19 +82,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/core/ServletBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
+            <state relative-caret-position="3475">
               <caret line="172" column="20" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/msg_add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1640" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/regist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="1525">
               <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
             </state>
           </provider>
@@ -125,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/RegistServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="975">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,7 +192,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="587" />
     <option name="width" value="683" />
     <option name="height" value="715" />
@@ -220,8 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,6 +278,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -536,6 +521,8 @@
       <workItem from="1554625664636" duration="20238000" />
       <workItem from="1554705344276" duration="6004000" />
       <workItem from="1554712561490" duration="6154000" />
+      <workItem from="1554741856196" duration="36000" />
+      <workItem from="1554774727349" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="modify README">
       <created>1553949707104</created>
@@ -595,7 +582,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101474000" />
+    <option name="totallyTimeSpent" value="102142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,8 +595,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4414125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -642,7 +630,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39807382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4414125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -652,7 +640,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43771043" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3409836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -767,9 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,16 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-359">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,16 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/RegistServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/apache-tomcat-9.0.11/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
@@ -853,27 +818,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/regist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="550">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="925">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1525">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/RegistServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -882,9 +854,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/core/ServletBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="3475">
           <caret line="172" column="20" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/msg_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1640" />
       </provider>
     </entry>
   </component>
