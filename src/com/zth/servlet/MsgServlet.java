@@ -7,6 +7,7 @@ import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import javax.servlet.annotation.WebServlet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -37,15 +38,20 @@ public class MsgServlet extends ServletBase {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         msg.setCtime(new Date());
 
         String sql="insert into msg(title,content,ctime,admin_id) values(?,?,?,?)";
 
         try {
-            Db.update(sql,msg.getTitle(),msg.getContent(),msg.getCtime(),msg.getAdmin_id());
+
+            SimpleDateFormat sdf = new SimpleDateFormat( " yyyy-MM-dd HH:mm:ss " );
+            String nowTime = sdf.format(msg.getCtime());
+
+            Db.update(sql,msg.getTitle(),msg.getContent(),nowTime,msg.getAdmin_id());
             mapping.setAttr("msg","发布成功");
         } catch (SQLException e) {
-            mapping.setAttr("msg","发布失败");
+            mapping.setAttr("err","发布失败");
             e.printStackTrace();
         }
 

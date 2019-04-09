@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <title>留言板</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
 </head>
 <body>
 <div style="height: 50px;"></div>
@@ -16,7 +16,7 @@
         <div class="panel-heading ">
             <h3 class="panel-title ">
                 <a href="#" class="btn btn-danger">首页</a>
-                <a href="admin/msg?action=msg_add" class="btn btn-success">发布留言</a>
+                <a href="msg?action=msg_add" class="btn btn-success">发布留言</a>
                 <div style="float: right">
                     <%
                         Admin admin = (Admin)session.getAttribute("loged");
@@ -37,18 +37,13 @@
                     for (Msg msg:msgs) {
                         %>
 
-            <tr><td>01</td><td>这是标题</td><td>作者</td><td>2019-4-7 09:47</td></tr>
+                            <tr><td><%=index++%></td><td><%=msg.getTitle()%></td><td><%=msg.getAdminName()%></td><td><%=msg.getCtime()%></td></tr>
                         <%
                     }
                 }
             %>
 
 
-            <tr><td>01</td><td>这是标题</td><td>作者</td><td>2019-4-7 09:47</td></tr>
-            <tr><td>01</td><td>这是标题</td><td>作者</td><td>2019-4-7 09:47</td></tr>
-            <tr><td>01</td><td>这是标题</td><td>作者</td><td>2019-4-7 09:47</td></tr>
-            <tr><td>01</td><td>这是标题</td><td>作者</td><td>2019-4-7 09:47</td></tr>
-            <tr><td>01</td><td>这是标题</td><td>作者</td><td>2019-4-7 09:47</td></tr>
         </table>
 
 

@@ -64,9 +64,9 @@
 			<div class="panel-body">
 
 				<form action="msg" method="post">
-					<input type="text" name="token" />
-					<input type="text" name="action" value="msg_saveadd" />
-					<input type="text" name="admin_id" value="<%=admin.getId()%>" />
+					<%--<input type="hidden" name="token" />--%>
+					<input type="hidden" name="action" value="msg_saveadd" />
+					<input type="hidden" name="admin_id" value="<%=admin.getId()%>" />
 
 
 					<div class="form-group">
