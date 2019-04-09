@@ -162,7 +162,7 @@ public abstract class ServletBase extends HttpServlet {
             }
         }
 
-        public void setAttr(String key,String value)throws IOException, SQLException {
+        public void setAttr(String key,Object value)throws IOException, SQLException {
             request.setAttribute(key,value);
         }
 

@@ -44,7 +44,8 @@ public class LoginServlet extends ServletBase {
             if (null != admin){
                 mapping.setSesstionAttr("loged",admin);
                 mapping.setAttr("msg","登录成功");
-                mapping.forward("page/main.jsp");
+                //mapping.forward("page/main.jsp");
+                mapping.redirect("admin/msg");
             }else {
                 mapping.setAttr("err","用户名或密码不正确！");
                 mapping.forward("page/login.jsp");

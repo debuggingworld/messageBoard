@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 <body>
+<div style="height: 50px;"></div>
 <div class="container">
     <div class="panel panel-default ">
         <div class="panel-heading ">
             <h3 class="panel-title ">
                 <a href="#" class="btn btn-danger">首页</a>
-                <a href="#" class="btn btn-success">发布留言</a>
+                <a href="admin/msg?action=msg_add" class="btn btn-success">发布留言</a>
                 <div style="float: right">
                     <%
                         Admin admin = (Admin)session.getAttribute("loged");
                         out.println(admin.getEmail());
-                        out.println("<img src='../ups/"+admin.getPic()+"'  height=40");
+                        out.println("<img src='../ups/"+admin.getPic()+"'  height=30");
                     %>
                 </div>
             </h3>
