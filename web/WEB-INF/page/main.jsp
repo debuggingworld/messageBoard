@@ -33,14 +33,6 @@
             <%
                 PageDiv<Msg> pd = ( PageDiv<Msg>)request.getAttribute("pd");
 
-                System.out.println("getStart::::::"+pd.getStart());
-                System.out.println("getEnd::::::"+pd.getEnd());
-                System.out.println("getTotalCount::::::"+pd.getTotalCount());
-                System.out.println("getTotalPage::::::"+pd.getTotalPage());
-                System.out.println("getPageNo::::::"+pd.getPageNo());
-                System.out.println("getPageSize::::::"+pd.getPageSize());
-                System.out.println("getIndexCount::::::"+pd.getIndexCount());
-
 
                 if (null != pd && null!= pd.getList() && pd.getList().size() >0){
                     List<Msg> msgs = pd.getList();
@@ -48,7 +40,7 @@
                     for (Msg msg:msgs) {
             %>
 
-            <tr><td><%=index++%></td><td><%=msg.getTitle()%></td><td><%=msg.getAdminName()%></td><td><%=msg.getCtime()%></td></tr>
+            <tr><td><%=index++%></td><td><a href="msg?action=showMsg&id=<%=msg.getId()%>"><%=msg.getTitle()%></a></td><td><%=msg.getAdminName()%></td><td><%=msg.getCtime()%></td></tr>
             <%
                     }
                 }

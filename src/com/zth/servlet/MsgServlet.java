@@ -5,6 +5,7 @@ import com.zth.db.PageDiv;
 import com.zth.pojo.Msg;
 import com.zth.servlet.core.ServletBase;
 import org.apache.commons.dbutils.handlers.ArrayHandler;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import javax.servlet.annotation.WebServlet;
@@ -85,5 +86,17 @@ public class MsgServlet extends ServletBase {
         }
 
         index(mapping);
+    }
+
+    public void showMsg(Mapping mapping) throws Exception {
+
+        int id  = mapping.getInt("id");
+
+        if (id>0){
+            String sql = "select * from  msg where id = ?";
+            Msg msg = Db.query(sql,new BeanHandler<Msg>(Msg.class),id);
+            mapping.setAttr("msg",msg);
+        }
+        mapping.forward("page/show.jsp");
     }
 }
