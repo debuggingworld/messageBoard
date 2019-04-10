@@ -1,6 +1,7 @@
 package com.zth.servlet;
 
 import com.zth.db.Db;
+import com.zth.db.PageDiv;
 import com.zth.pojo.Msg;
 import com.zth.servlet.core.ServletBase;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
@@ -18,11 +19,26 @@ public class MsgServlet extends ServletBase {
     public void index(Mapping mapping) throws Exception {
 
         // 查询所有留言
-        List<Msg> msgs = null;
+       /* List<Msg> msgs = null;
 
-        msgs = Db.query("select * from msg",new BeanListHandler<Msg>(Msg.class));
+        msgs = Db.query(" select m.*,a.name as adminName from msg m inner join admin a on m.admin_id = a.id order by m.id desc",new BeanListHandler<Msg>(Msg.class));
 
-        mapping.setAttr("allmsg",msgs);
+        mapping.setAttr("allmsg",msgs);*/
+
+       int pageSize = 5;
+       int pageNo = 1;
+
+       if (mapping.getInt("pageNo") >1){
+           pageNo = mapping.getInt("pageNo");
+       }
+
+        PageDiv<Msg> pageDiv = null;
+
+        List<Msg> list = Db.query(" select m.*,a.name as adminName from msg m inner join admin a on m.admin_id = a.id order by m.id desc limit ?,?",new BeanListHandler<Msg>(Msg.class),(pageNo-1)*pageSize,pageSize);
+
+
+        mapping.setAttr("pd",pageDiv);
+
         mapping.forward("page/main.jsp");
     }
 
