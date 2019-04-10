@@ -4,9 +4,11 @@ import com.zth.db.Db;
 import com.zth.db.PageDiv;
 import com.zth.pojo.Msg;
 import com.zth.servlet.core.ServletBase;
+import org.apache.commons.dbutils.handlers.ArrayHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import javax.servlet.annotation.WebServlet;
+import java.math.BigInteger;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -35,6 +37,17 @@ public class MsgServlet extends ServletBase {
         PageDiv<Msg> pageDiv = null;
 
         List<Msg> list = Db.query(" select m.*,a.name as adminName from msg m inner join admin a on m.admin_id = a.id order by m.id desc limit ?,?",new BeanListHandler<Msg>(Msg.class),(pageNo-1)*pageSize,pageSize);
+
+        Object object = Db.query(" select count(id) from msg",new ArrayHandler())[0];
+
+        int totalCount = 0;
+
+        if (object instanceof BigInteger){
+            totalCount = ((BigInteger)object).intValue();
+        }else if (object instanceof Long){
+            totalCount = ((Long)object).intValue();
+        }
+        pageDiv = new PageDiv<>(pageNo,pageSize,totalCount,list);
 
 
         mapping.setAttr("pd",pageDiv);

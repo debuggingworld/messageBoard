@@ -24,7 +24,7 @@ public class PageDiv<T> {
         this.pageNo = pageNo;
         this.pageSize = pageSize;
         this.totalCount = totalCount;
-        this.totalPage = (totalPage+pageSize-1)/pageSize;
+        this.totalPage = (totalCount+pageSize-1)/pageSize;
         this.list = list;
 
         if (pageNo-indexCount/2 <1){
@@ -34,7 +34,7 @@ public class PageDiv<T> {
         }
 
         if (pageNo+indexCount/2 > totalPage){
-            end = totalCount;
+            end = totalPage;
         }else {
             end = pageNo + indexCount/2;
         }
