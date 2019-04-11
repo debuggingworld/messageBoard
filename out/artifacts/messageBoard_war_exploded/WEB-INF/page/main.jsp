@@ -18,7 +18,8 @@
             <h3 class="panel-title ">
                 <a href="#" class="btn btn-danger">首页</a>
                 <a href="msg?action=msg_add" class="btn btn-success">发布留言</a>
-                <div style="float: right">
+                <a href="../logout" class="btn btn-danger pull-right btn-xs">登出</a>
+                <div style="float: right ;margin-right: 20px">
                     <%
                         Admin admin = (Admin)session.getAttribute("loged");
                         out.println(admin.getEmail());

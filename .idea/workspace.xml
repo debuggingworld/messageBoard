@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2224520-1846-4770-92d9-1428d6b23df5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/zth/servlet/MsgServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zth/servlet/MsgServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zth/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/messageBoard_war_exploded/WEB-INF/page/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/msg_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/page/msg_add.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +37,7 @@
     <session id="1217433638">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
@@ -60,7 +61,7 @@
           <entry key="CLASS" value="2" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="86" />
+          <entry key="JAVA" value="90" />
           <entry key="JSP" value="52" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="1" />
@@ -71,8 +72,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="10769" />
-          <entry key="JSP" value="2055" />
+          <entry key="JAVA" value="10852" />
+          <entry key="JSP" value="2091" />
           <entry key="Markdown" value="64" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Properties" value="2" />
@@ -83,11 +84,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/MsgServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="115">
               <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/LogoutServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,17 +111,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+            <state relative-caret-position="-1275">
+              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/msg_add.jsp">
+        <entry file="file://$PROJECT_DIR$/src/com/zth/filter/CheckLoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="66" column="43" lean-forward="true" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+            <state relative-caret-position="133">
+              <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,8 +138,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -177,9 +196,10 @@
         <option value="$PROJECT_DIR$/src/com/zth/filter/CheckLoginFilter.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/404.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/main.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/msg_add.jsp" />
         <option value="$PROJECT_DIR$/src/com/zth/servlet/MsgServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/main.jsp" />
+        <option value="$PROJECT_DIR$/src/com/zth/servlet/LogoutServlet.java" />
       </list>
     </option>
   </component>
@@ -274,7 +294,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554972890796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554974956408" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/druid-1.1.6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -517,7 +537,7 @@
       <workItem from="1554879428374" duration="4668000" />
       <workItem from="1554893756638" duration="13750000" />
       <workItem from="1554943121020" duration="13766000" />
-      <workItem from="1554966665869" duration="4999000" />
+      <workItem from="1554966665869" duration="7278000" />
     </task>
     <task id="LOCAL-00001" summary="modify README">
       <created>1553949707104</created>
@@ -583,7 +603,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155120000" />
+    <option name="totallyTimeSpent" value="157399000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,7 +618,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.37239164" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20196672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -608,7 +628,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36557376" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4852459" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -922,16 +942,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zth/filter/NotFoundFilter.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/core/ServletBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -960,16 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zth/filter/CheckLoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/404.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240">
@@ -982,13 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/msg_add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -996,10 +989,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/MsgServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="115">
           <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1275">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zth/filter/CheckLoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zth/servlet/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
