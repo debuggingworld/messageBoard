@@ -5,3 +5,5 @@
 + servlet
 + jsp
 + mysql
+
+>数据库文件保存于res下的sql问价
