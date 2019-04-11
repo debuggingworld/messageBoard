@@ -57,9 +57,7 @@
             <%
                     }
                 }
-
             %>
-
 
         </table>
 
@@ -73,7 +71,6 @@
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
-
                         <%
                             for (int i = pd.getStart(); i <=pd.getEnd() ; i++) {
                          %>
@@ -99,7 +96,6 @@
         </div>
 
         <!-- 结束 -->
-
     </div>
 </div>
 <%@include file="booter2.jsp" %>
