@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 @WebServlet("/admin/msg")
 public class MsgServlet extends ServletBase {
@@ -57,35 +58,48 @@ public class MsgServlet extends ServletBase {
     }
 
     public void msg_add(Mapping mapping) throws Exception {
+
+        mapping.setSesstionAttr("token", UUID.randomUUID().toString());
         mapping.forward("page/msg_add.jsp");
     }
 
     public void msg_saveadd(Mapping mapping) throws Exception {
 
-        Msg msg = new Msg();
-        try {
-            mapping.getBean(msg);
-        } catch (Exception e) {
-            e.printStackTrace();
+        String token = (String) mapping.getRequest().getSession().getAttribute("token");
+
+        String stoken = mapping.getString("token");
+
+        if (stoken.equals(token)) {
+
+            mapping.getRequest().getSession().removeAttribute("token");
+
+            Msg msg = new Msg();
+            try {
+                mapping.getBean(msg);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            msg.setCtime(new Date());
+
+            String sql = "insert into msg(title,content,ctime,admin_id) values(?,?,?,?)";
+
+            try {
+
+                SimpleDateFormat sdf = new SimpleDateFormat(" yyyy-MM-dd HH:mm:ss ");
+                String nowTime = sdf.format(msg.getCtime());
+
+                Db.update(sql, msg.getTitle(), msg.getContent(), nowTime, msg.getAdmin_id());
+                mapping.setAttr("msg", "发布成功");
+            } catch (SQLException e) {
+                mapping.setAttr("err", "发布失败");
+                e.printStackTrace();
+            }
+        }else {
+            mapping.setAttr("err","请不要重复提交！");
         }
+            index(mapping);
 
-        msg.setCtime(new Date());
-
-        String sql="insert into msg(title,content,ctime,admin_id) values(?,?,?,?)";
-
-        try {
-
-            SimpleDateFormat sdf = new SimpleDateFormat( " yyyy-MM-dd HH:mm:ss " );
-            String nowTime = sdf.format(msg.getCtime());
-
-            Db.update(sql,msg.getTitle(),msg.getContent(),nowTime,msg.getAdmin_id());
-            mapping.setAttr("msg","发布成功");
-        } catch (SQLException e) {
-            mapping.setAttr("err","发布失败");
-            e.printStackTrace();
-        }
-
-        index(mapping);
     }
 
     public void showMsg(Mapping mapping) throws Exception {

@@ -43,7 +43,7 @@
             <tr><td><%=index++%></td><td><a href="msg?action=showMsg&id=<%=msg.getId()%>"><%=msg.getTitle()%></a></td><td><%=msg.getAdminName()%></td><td><%=msg.getCtime()%></td>
             <td>
                 <%
-                    if (admin.getUpur().startsWith("100")){
+                    if (admin.getUpur().startsWith("100") || msg.getAdmin_id() == admin.getId()){
                        %>
 
                 <a href="msg?action=del&id=<%=msg.getId()%>" class="btn btn-danger btn-xs">删除</a>
@@ -57,9 +57,7 @@
             <%
                     }
                 }
-
             %>
-
 
         </table>
 
@@ -73,7 +71,6 @@
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
-
                         <%
                             for (int i = pd.getStart(); i <=pd.getEnd() ; i++) {
                          %>
@@ -99,7 +96,6 @@
         </div>
 
         <!-- 结束 -->
-
     </div>
 </div>
 <%@include file="booter2.jsp" %>

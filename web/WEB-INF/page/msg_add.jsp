@@ -64,7 +64,7 @@
 			<div class="panel-body">
 
 				<form action="msg" method="post">
-					<%--<input type="hidden" name="token" />--%>
+					<input type="hidden" name="token" value="<%=request.getSession().getAttribute("token")%>"/>
 					<input type="hidden" name="action" value="msg_saveadd" />
 					<input type="hidden" name="admin_id" value="<%=admin.getId()%>" />
 
