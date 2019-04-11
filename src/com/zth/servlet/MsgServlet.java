@@ -99,4 +99,37 @@ public class MsgServlet extends ServletBase {
         }
         mapping.forward("page/show.jsp");
     }
+
+
+    public void edit(Mapping mapping) throws Exception {
+
+        int id  = mapping.getInt("id");
+
+        if (id>0){
+            String sql = "select * from  msg where id = ?";
+            Msg msg = Db.query(sql,new BeanHandler<Msg>(Msg.class),id);
+            mapping.setAttr("msg",msg);
+        }
+        mapping.forward("page/msg_edit.jsp");
+    }
+
+    public void msg_saveedit(Mapping mapping) throws Exception {
+
+        Msg msg = new Msg();
+        mapping.getBean(msg);
+
+        String sql = "update msg set title = ?,content = ? where id =?";
+
+        try{
+            Db.update(sql,msg.getTitle(),msg.getContent(),msg.getId());
+            mapping.setAttr("msg","修改成功！");
+        }catch (Exception e){
+            mapping.setAttr("msg","修改失败！");
+            e.printStackTrace();
+        }
+
+        index(mapping);
+
+    }
+
 }

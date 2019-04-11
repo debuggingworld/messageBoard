@@ -28,6 +28,9 @@
         <div class="panel-body" style="text-align: center;">
             <%=msg.getContent()%>
         </div>
+        <div class="pull-right">
+            <a class="btn btn-success" href="../admin/msg">返回</a>
+        </div>
         <%
             }
         %>

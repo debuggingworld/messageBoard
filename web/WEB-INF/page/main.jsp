@@ -40,7 +40,20 @@
                     for (Msg msg:msgs) {
             %>
 
-            <tr><td><%=index++%></td><td><a href="msg?action=showMsg&id=<%=msg.getId()%>"><%=msg.getTitle()%></a></td><td><%=msg.getAdminName()%></td><td><%=msg.getCtime()%></td></tr>
+            <tr><td><%=index++%></td><td><a href="msg?action=showMsg&id=<%=msg.getId()%>"><%=msg.getTitle()%></a></td><td><%=msg.getAdminName()%></td><td><%=msg.getCtime()%></td>
+            <td>
+                <%
+                    if (admin.getUpur().startsWith("100")){
+                       %>
+
+                <a href="msg?action=del&id=<%=msg.getId()%>" class="btn btn-danger btn-xs">删除</a>
+                <a href="msg?action=edit&id=<%=msg.getId()%>" class="btn btn-success btn-xs">修改</a>
+                <%
+                    }
+                %>
+            </td>
+
+            </tr>
             <%
                     }
                 }
