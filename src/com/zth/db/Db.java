@@ -26,6 +26,7 @@ public class Db {
         ds.setDriverClassName(res.getString("driverClassName"));
         ds.setUsername(res.getString("username"));
         ds.setPassword(res.getString("password"));
+
         try {
             ds.setFilters(res.getString("filters"));
         } catch (SQLException e) {

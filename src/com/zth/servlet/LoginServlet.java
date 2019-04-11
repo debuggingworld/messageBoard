@@ -18,6 +18,7 @@ public class LoginServlet extends ServletBase {
     @Override
     public void index(Mapping mapping) throws Exception {
         try {
+            mapping.setAttr("msg",mapping.getRequest().getAttribute("msg"));
             mapping.forward("page/login.jsp");
         } catch (SQLException e) {
             e.printStackTrace();

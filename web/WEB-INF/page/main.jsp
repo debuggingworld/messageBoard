@@ -93,7 +93,7 @@
                 </nav>
             </div>
 
-            <div class="pull-right " style="padding-top: 10px ;font-size: 18px">
+            <div class="pull-right " style="margin-top: 25px ;font-size: 18px">
                 当前 <%=pd.getPageNo()%>/<%=pd.getTotalPage()%>页，总共 <%=pd.getTotalCount()%>条
             </div>
         </div>
