@@ -132,4 +132,20 @@ public class MsgServlet extends ServletBase {
 
     }
 
+    public void del(Mapping mapping) throws Exception {
+
+       int id  = mapping.getInt("id");
+
+       String sql = "delete from msg where id = ?";
+
+        try{
+            Db.update(sql,id);
+            mapping.setAttr("msg","删除成功！");
+        }catch (Exception e){
+            mapping.setAttr("msg","删除失败！");
+            e.printStackTrace();
+        }
+        index(mapping);
+    }
+
 }
